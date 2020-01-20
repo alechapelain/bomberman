@@ -2,9 +2,11 @@
   "name": "bomberman",
   "version": "0.0.1",
   "description": "Multiplayer Bomberman",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
-    "start": "http-server src"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,14 @@
     "url": "https://github.com/alechapelain/bomberman/issues"
   },
   "homepage": "https://github.com/alechapelain/bomberman#readme",
+  "dependencies": {
+    "phaser": "^3.22.0"
+  },
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }

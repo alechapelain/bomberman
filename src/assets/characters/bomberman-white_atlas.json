@@ -1,0 +1,2348 @@
+{
+    "frames": [
+        {
+            "filename": "bomberman-white_0",
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_1",
+            "frame": {
+                "x": 0,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_2",
+            "frame": {
+                "x": 0,
+                "y": 64,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_3",
+            "frame": {
+                "x": 0,
+                "y": 96,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_4",
+            "frame": {
+                "x": 0,
+                "y": 128,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_5",
+            "frame": {
+                "x": 0,
+                "y": 160,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_6",
+            "frame": {
+                "x": 0,
+                "y": 192,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_7",
+            "frame": {
+                "x": 0,
+                "y": 224,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_8",
+            "frame": {
+                "x": 0,
+                "y": 256,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_9",
+            "frame": {
+                "x": 0,
+                "y": 288,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_10",
+            "frame": {
+                "x": 0,
+                "y": 320,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_11",
+            "frame": {
+                "x": 0,
+                "y": 352,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_12",
+            "frame": {
+                "x": 0,
+                "y": 384,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_13",
+            "frame": {
+                "x": 0,
+                "y": 416,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_14",
+            "frame": {
+                "x": 0,
+                "y": 448,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_15",
+            "frame": {
+                "x": 0,
+                "y": 480,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_16",
+            "frame": {
+                "x": 0,
+                "y": 512,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_17",
+            "frame": {
+                "x": 0,
+                "y": 544,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_18",
+            "frame": {
+                "x": 0,
+                "y": 576,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_19",
+            "frame": {
+                "x": 0,
+                "y": 608,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_20",
+            "frame": {
+                "x": 0,
+                "y": 640,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_21",
+            "frame": {
+                "x": 0,
+                "y": 672,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_22",
+            "frame": {
+                "x": 0,
+                "y": 704,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_23",
+            "frame": {
+                "x": 0,
+                "y": 736,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_24",
+            "frame": {
+                "x": 0,
+                "y": 768,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_25",
+            "frame": {
+                "x": 0,
+                "y": 800,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_26",
+            "frame": {
+                "x": 0,
+                "y": 832,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_27",
+            "frame": {
+                "x": 0,
+                "y": 864,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_28",
+            "frame": {
+                "x": 0,
+                "y": 896,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_29",
+            "frame": {
+                "x": 0,
+                "y": 928,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_30",
+            "frame": {
+                "x": 0,
+                "y": 960,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_31",
+            "frame": {
+                "x": 0,
+                "y": 992,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_32",
+            "frame": {
+                "x": 0,
+                "y": 1024,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_33",
+            "frame": {
+                "x": 0,
+                "y": 1056,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_34",
+            "frame": {
+                "x": 0,
+                "y": 1088,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_35",
+            "frame": {
+                "x": 0,
+                "y": 1120,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_36",
+            "frame": {
+                "x": 0,
+                "y": 1152,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_37",
+            "frame": {
+                "x": 0,
+                "y": 1184,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_38",
+            "frame": {
+                "x": 0,
+                "y": 1216,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_39",
+            "frame": {
+                "x": 0,
+                "y": 1248,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_40",
+            "frame": {
+                "x": 0,
+                "y": 1280,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_41",
+            "frame": {
+                "x": 0,
+                "y": 1312,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_42",
+            "frame": {
+                "x": 0,
+                "y": 1344,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_43",
+            "frame": {
+                "x": 0,
+                "y": 1376,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_44",
+            "frame": {
+                "x": 0,
+                "y": 1408,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_45",
+            "frame": {
+                "x": 0,
+                "y": 1440,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_46",
+            "frame": {
+                "x": 0,
+                "y": 1472,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_47",
+            "frame": {
+                "x": 0,
+                "y": 1504,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_48",
+            "frame": {
+                "x": 0,
+                "y": 1536,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_49",
+            "frame": {
+                "x": 0,
+                "y": 1568,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_50",
+            "frame": {
+                "x": 0,
+                "y": 1600,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_51",
+            "frame": {
+                "x": 0,
+                "y": 1632,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_52",
+            "frame": {
+                "x": 0,
+                "y": 1664,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_53",
+            "frame": {
+                "x": 0,
+                "y": 1696,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_54",
+            "frame": {
+                "x": 0,
+                "y": 1728,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_55",
+            "frame": {
+                "x": 0,
+                "y": 1760,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_56",
+            "frame": {
+                "x": 0,
+                "y": 1792,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_57",
+            "frame": {
+                "x": 0,
+                "y": 1824,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_58",
+            "frame": {
+                "x": 0,
+                "y": 1856,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_59",
+            "frame": {
+                "x": 0,
+                "y": 1888,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_60",
+            "frame": {
+                "x": 0,
+                "y": 1920,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_61",
+            "frame": {
+                "x": 0,
+                "y": 1952,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_62",
+            "frame": {
+                "x": 0,
+                "y": 1984,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_63",
+            "frame": {
+                "x": 0,
+                "y": 2016,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_64",
+            "frame": {
+                "x": 0,
+                "y": 2048,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_65",
+            "frame": {
+                "x": 0,
+                "y": 2080,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_66",
+            "frame": {
+                "x": 0,
+                "y": 2112,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_67",
+            "frame": {
+                "x": 0,
+                "y": 2144,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_68",
+            "frame": {
+                "x": 0,
+                "y": 2176,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_69",
+            "frame": {
+                "x": 0,
+                "y": 2208,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_70",
+            "frame": {
+                "x": 0,
+                "y": 2240,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_71",
+            "frame": {
+                "x": 0,
+                "y": 2272,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_72",
+            "frame": {
+                "x": 0,
+                "y": 2304,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_73",
+            "frame": {
+                "x": 0,
+                "y": 2336,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_74",
+            "frame": {
+                "x": 0,
+                "y": 2368,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_75",
+            "frame": {
+                "x": 0,
+                "y": 2400,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_76",
+            "frame": {
+                "x": 0,
+                "y": 2432,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_77",
+            "frame": {
+                "x": 0,
+                "y": 2464,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_78",
+            "frame": {
+                "x": 0,
+                "y": 2496,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_79",
+            "frame": {
+                "x": 0,
+                "y": 2528,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_80",
+            "frame": {
+                "x": 0,
+                "y": 2560,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_81",
+            "frame": {
+                "x": 0,
+                "y": 2592,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_82",
+            "frame": {
+                "x": 0,
+                "y": 2624,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_83",
+            "frame": {
+                "x": 0,
+                "y": 2656,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_84",
+            "frame": {
+                "x": 0,
+                "y": 2688,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_85",
+            "frame": {
+                "x": 0,
+                "y": 2720,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_86",
+            "frame": {
+                "x": 0,
+                "y": 2752,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_87",
+            "frame": {
+                "x": 0,
+                "y": 2784,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_88",
+            "frame": {
+                "x": 0,
+                "y": 2816,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_89",
+            "frame": {
+                "x": 0,
+                "y": 2848,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_90",
+            "frame": {
+                "x": 0,
+                "y": 2880,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_91",
+            "frame": {
+                "x": 0,
+                "y": 2912,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_92",
+            "frame": {
+                "x": 0,
+                "y": 2944,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_93",
+            "frame": {
+                "x": 0,
+                "y": 2976,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_94",
+            "frame": {
+                "x": 0,
+                "y": 3008,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_95",
+            "frame": {
+                "x": 0,
+                "y": 3040,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_96",
+            "frame": {
+                "x": 0,
+                "y": 3072,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_97",
+            "frame": {
+                "x": 0,
+                "y": 3104,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_98",
+            "frame": {
+                "x": 0,
+                "y": 3136,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_99",
+            "frame": {
+                "x": 0,
+                "y": 3168,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_100",
+            "frame": {
+                "x": 0,
+                "y": 3200,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_101",
+            "frame": {
+                "x": 0,
+                "y": 3232,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_102",
+            "frame": {
+                "x": 0,
+                "y": 3264,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_103",
+            "frame": {
+                "x": 0,
+                "y": 3296,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_104",
+            "frame": {
+                "x": 0,
+                "y": 3328,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_105",
+            "frame": {
+                "x": 0,
+                "y": 3360,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_106",
+            "frame": {
+                "x": 0,
+                "y": 3392,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_107",
+            "frame": {
+                "x": 0,
+                "y": 3424,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_108",
+            "frame": {
+                "x": 0,
+                "y": 3456,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_109",
+            "frame": {
+                "x": 0,
+                "y": 3488,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_110",
+            "frame": {
+                "x": 0,
+                "y": 3520,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_111",
+            "frame": {
+                "x": 0,
+                "y": 3552,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_112",
+            "frame": {
+                "x": 0,
+                "y": 3584,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_113",
+            "frame": {
+                "x": 0,
+                "y": 3616,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_114",
+            "frame": {
+                "x": 0,
+                "y": 3648,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_115",
+            "frame": {
+                "x": 0,
+                "y": 3680,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_116",
+            "frame": {
+                "x": 0,
+                "y": 3712,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_117",
+            "frame": {
+                "x": 0,
+                "y": 3744,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_118",
+            "frame": {
+                "x": 0,
+                "y": 3776,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_119",
+            "frame": {
+                "x": 0,
+                "y": 3808,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_120",
+            "frame": {
+                "x": 0,
+                "y": 3840,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_121",
+            "frame": {
+                "x": 0,
+                "y": 3872,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_122",
+            "frame": {
+                "x": 0,
+                "y": 3904,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_123",
+            "frame": {
+                "x": 0,
+                "y": 3936,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_124",
+            "frame": {
+                "x": 0,
+                "y": 3968,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_125",
+            "frame": {
+                "x": 0,
+                "y": 4000,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_126",
+            "frame": {
+                "x": 0,
+                "y": 4032,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_127",
+            "frame": {
+                "x": 0,
+                "y": 4064,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_128",
+            "frame": {
+                "x": 0,
+                "y": 4096,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_129",
+            "frame": {
+                "x": 0,
+                "y": 4128,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_130",
+            "frame": {
+                "x": 0,
+                "y": 4160,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_131",
+            "frame": {
+                "x": 0,
+                "y": 4192,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_132",
+            "frame": {
+                "x": 0,
+                "y": 4224,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_133",
+            "frame": {
+                "x": 0,
+                "y": 4256,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_134",
+            "frame": {
+                "x": 0,
+                "y": 4288,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_135",
+            "frame": {
+                "x": 0,
+                "y": 4320,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_136",
+            "frame": {
+                "x": 0,
+                "y": 4352,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_137",
+            "frame": {
+                "x": 0,
+                "y": 4384,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_138",
+            "frame": {
+                "x": 0,
+                "y": 4416,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_139",
+            "frame": {
+                "x": 0,
+                "y": 4448,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_140",
+            "frame": {
+                "x": 0,
+                "y": 4480,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_141",
+            "frame": {
+                "x": 0,
+                "y": 4512,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_142",
+            "frame": {
+                "x": 0,
+                "y": 4544,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_143",
+            "frame": {
+                "x": 0,
+                "y": 4576,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_144",
+            "frame": {
+                "x": 0,
+                "y": 4608,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_145",
+            "frame": {
+                "x": 0,
+                "y": 4640,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_146",
+            "frame": {
+                "x": 0,
+                "y": 4672,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_147",
+            "frame": {
+                "x": 0,
+                "y": 4704,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_148",
+            "frame": {
+                "x": 0,
+                "y": 4736,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_149",
+            "frame": {
+                "x": 0,
+                "y": 4768,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_150",
+            "frame": {
+                "x": 0,
+                "y": 4800,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_151",
+            "frame": {
+                "x": 0,
+                "y": 4832,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_152",
+            "frame": {
+                "x": 0,
+                "y": 4864,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_153",
+            "frame": {
+                "x": 0,
+                "y": 4896,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_154",
+            "frame": {
+                "x": 0,
+                "y": 4928,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_155",
+            "frame": {
+                "x": 0,
+                "y": 4960,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_156",
+            "frame": {
+                "x": 0,
+                "y": 4992,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_157",
+            "frame": {
+                "x": 0,
+                "y": 5024,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_158",
+            "frame": {
+                "x": 0,
+                "y": 5056,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_159",
+            "frame": {
+                "x": 0,
+                "y": 5088,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_160",
+            "frame": {
+                "x": 0,
+                "y": 5120,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_161",
+            "frame": {
+                "x": 0,
+                "y": 5152,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_162",
+            "frame": {
+                "x": 0,
+                "y": 5184,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_163",
+            "frame": {
+                "x": 0,
+                "y": 5216,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_164",
+            "frame": {
+                "x": 0,
+                "y": 5248,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_165",
+            "frame": {
+                "x": 0,
+                "y": 5280,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_166",
+            "frame": {
+                "x": 0,
+                "y": 5312,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_167",
+            "frame": {
+                "x": 0,
+                "y": 5344,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_168",
+            "frame": {
+                "x": 0,
+                "y": 5376,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_169",
+            "frame": {
+                "x": 0,
+                "y": 5408,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_170",
+            "frame": {
+                "x": 0,
+                "y": 5440,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_171",
+            "frame": {
+                "x": 0,
+                "y": 5472,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_172",
+            "frame": {
+                "x": 0,
+                "y": 5504,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_173",
+            "frame": {
+                "x": 0,
+                "y": 5536,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_174",
+            "frame": {
+                "x": 0,
+                "y": 5568,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_175",
+            "frame": {
+                "x": 0,
+                "y": 5600,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_176",
+            "frame": {
+                "x": 0,
+                "y": 5632,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_177",
+            "frame": {
+                "x": 0,
+                "y": 5664,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_178",
+            "frame": {
+                "x": 0,
+                "y": 5696,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "bomberman-white_179",
+            "frame": {
+                "x": 0,
+                "y": 5728,
+                "w": 32,
+                "h": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Phaser3",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

@@ -1,0 +1,14 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Helvetica', 'Verdana';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 25px 0;
+    text-align: center;
+}
