@@ -1,9 +1,10 @@
 import 'phaser'
-import Rectangle = Phaser.Geom.Rectangle;
+import BombermanWhite from '../characters/bomberman-white'
+import BombermanBlack from '../characters/bomberman-black';
+import { CharacterAbstract } from '../characters/character.abstract';
 
 export class BattleScene extends Phaser.Scene {
-    private player: any
-    private cursors: Phaser.Types.Input.Keyboard.CursorKeys
+    private characters: CharacterAbstract[];
 
     constructor() {
         super({
@@ -11,106 +12,76 @@ export class BattleScene extends Phaser.Scene {
         });
     }
 
-    init(params): void {
+    /**
+     * Init Scene / listen for fullscreen
+     * @param params
+     */
+    public init (params): void {
         var canvas = this.sys.game.canvas
         var fullscreen = this.sys.game.device.fullscreen;
 
-
         document.querySelector('.btn-fullscreen').addEventListener('click', function () {
             if (document.fullscreenElement) { return; }
-
             canvas[fullscreen.request]();
         });
     }
-    preload(): void {
+
+    /**
+     * Loading images/stage
+     */
+    public preload (): void {
         this.load.image('tiles', 'assets/background/classic.png')
         this.load.tilemapTiledJSON('map', 'assets/background/stage-classic.json')
-
         this.load.atlas('bomberman-white', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
     }
-    create(): void {
+    /**
+     * When Creating the scene
+     */
+    public create (): void {
         const map = this.make.tilemap({ key: 'map' })
         const classicStage = map.addTilesetImage('stage-classic', 'tiles')
         const stage = map.createStaticLayer('stage', classicStage);
         stage.setCollisionFromCollisionGroup(true)
 
-        this.player = this.physics.add.sprite(16, 16, 'bomberman-white', 'bomberman-white_18')
-        this.player.body.setSize(8, 12, false);
-        this.player.body.setOffset(12, 18);
-        this.physics.add.collider(this.player, stage);
-        this.cursors = this.input.keyboard.createCursorKeys();
+        this.characters = [
+            new BombermanWhite(this.physics, this.anims, BattleScene.getInput1(this.input), stage),
+            new BombermanBlack(this.physics, this.anims, BattleScene.getInput2(this.input), stage)
+        ];
 
-
-        this.anims.create({
-            key: 'walk-down',
-            frames: this.anims.generateFrameNames('bomberman-white', {
-                prefix: 'bomberman-white_',
-                start: 20,
-                end: 18,
-            }),
-            frameRate: 6
-        });
-
-        this.anims.create({
-            key: 'walk-up',
-            frames: this.anims.generateFrameNames('bomberman-white', {
-                prefix: 'bomberman-white_',
-                start: 2,
-                end: 0,
-            }),
-            frameRate: 6
-        });
-
-        this.anims.create({
-            key: 'walk-right',
-            frames: this.anims.generateFrameNames('bomberman-white', {
-                prefix: 'bomberman-white_',
-                start: 11,
-                end: 9,
-            }),
-            frameRate: 6
-        });
-
-        this.anims.create({
-            key: 'walk-left',
-            frames: this.anims.generateFrameNames('bomberman-white', {
-                prefix: 'bomberman-white_',
-                start: 29,
-                end: 27,
-            }),
-            frameRate: 6
-        });
-
+        this.characters.forEach(character => character.load());
     }
-    update(time): void {
-        const velocity = 40
-        if (this.cursors.left.isDown) {
-            this.player.setVelocityY(0);
-            this.player.setVelocityX(-(velocity));
-            if (!this.player.body.onFloor()) {
-                this.player.play('walk-left', true);
-            }
-        } else if (this.cursors.right.isDown) {
-            this.player.setVelocityY(0);
-            this.player.setVelocityX(velocity);
-            if (!this.player.body.onFloor()) {
-                this.player.play('walk-right', true);
-            }
-        } else if (this.cursors.up.isDown) {
-            this.player.setVelocityX(0);
-            this.player.setVelocityY(-(velocity));
-            if (!this.player.body.onFloor()) {
-                this.player.play('walk-up', true);
-            }
-        } else if (this.cursors.down.isDown) {
-            this.player.setVelocityX(0);
-            this.player.setVelocityY(velocity);
-            if (!this.player.body.onFloor()) {
-                this.player.play('walk-down', true);
-            }
-        } else {
-            this.player.setVelocityX(0);
-            this.player.setVelocityY(0);
-        }
+    /**
+     * When scene updates
+     * @param time
+     */
+    public update (time): void {
+        this.characters.forEach(character => character.onMoving());
+    }
+
+    /**
+     * Return input 1 using keyboard arrows
+     * @param input
+     * @private
+     */
+    private static getInput1(input) {
+        return input.keyboard.addKeys({
+            UP: Phaser.Input.Keyboard.KeyCodes.UP,
+            DOWN: Phaser.Input.Keyboard.KeyCodes.DOWN,
+            LEFT: Phaser.Input.Keyboard.KeyCodes.LEFT,
+            RIGHT: Phaser.Input.Keyboard.KeyCodes.RIGHT,
+        });
+    }
+    /**
+     * Return input 2 using keyboard letters
+     * @param input
+     * @private
+     */
+    private static getInput2(input) {
+        return input.keyboard.addKeys({
+            UP: Phaser.Input.Keyboard.KeyCodes.Z,
+            DOWN: Phaser.Input.Keyboard.KeyCodes.S,
+            LEFT: Phaser.Input.Keyboard.KeyCodes.Q,
+            RIGHT: Phaser.Input.Keyboard.KeyCodes.D
+        });
     }
 }
