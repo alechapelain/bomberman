@@ -2,6 +2,8 @@ import 'phaser'
 import BombermanWhite from '../characters/bomberman-white'
 import BombermanBlack from '../characters/bomberman-black';
 import { CharacterAbstract } from '../characters/character.abstract';
+import { getCharacterCoordinates } from '../characters/character.utils';
+import { Position } from '../characters/character.model';
 
 export class BattleScene extends Phaser.Scene {
     private characters: CharacterAbstract[];
@@ -44,8 +46,8 @@ export class BattleScene extends Phaser.Scene {
         stage.setCollisionFromCollisionGroup(true)
 
         this.characters = [
-            new BombermanWhite(this.physics, this.anims, BattleScene.getInput1(this.input), stage),
-            new BombermanBlack(this.physics, this.anims, BattleScene.getInput2(this.input), stage)
+            new BombermanWhite(this.physics, this.anims, BattleScene.getInput1(this.input), stage, getCharacterCoordinates(Position.TOP_LEFT)),
+            new BombermanBlack(this.physics, this.anims, BattleScene.getInput2(this.input), stage, getCharacterCoordinates(Position.BOTTOM_RIGHT))
         ];
 
         this.characters.forEach(character => character.load());

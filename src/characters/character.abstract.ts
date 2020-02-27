@@ -1,4 +1,4 @@
-import { CharacterAnimation } from './character.model';
+import { CharacterAnimation, Coordinates } from './character.model';
 import { Inputs } from '../scenes/scene.model';
 
 export abstract class CharacterAbstract {
@@ -6,13 +6,13 @@ export abstract class CharacterAbstract {
     abstract animations: CharacterAnimation[];
     abstract spriteNamePrefix: string;
     abstract iddleSpriteName: string;
-    abstract startPosition: number[];
 
     constructor(
         protected physics: Phaser.Physics.Arcade.ArcadePhysics,
         protected anims: Phaser.Animations.AnimationManager,
         protected inputs: Inputs,
-        protected stage: Phaser.Tilemaps.StaticTilemapLayer
+        protected stage: Phaser.Tilemaps.StaticTilemapLayer,
+        protected startCoordinates: Coordinates
     ) {
     }
 
@@ -64,7 +64,7 @@ export abstract class CharacterAbstract {
      * Set Sprite and Apply collisions
      */
     private setCollisions (): void {
-        this.character = this.physics.add.sprite(this.startPosition[0], this.startPosition[1], this.spriteNamePrefix, this.iddleSpriteName);
+        this.character = this.physics.add.sprite(this.startCoordinates.x, this.startCoordinates.y, this.spriteNamePrefix, this.iddleSpriteName);
         this.character.body.setSize(8, 12, false);
         this.character.body.setOffset(12, 18);
         this.physics.add.collider(this.character, this.stage);

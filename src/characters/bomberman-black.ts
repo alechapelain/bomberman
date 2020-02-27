@@ -5,7 +5,6 @@ import { CharacterAnimation } from './character.model';
 export default class BombermanBlack extends CharacterAbstract {
     spriteNamePrefix = 'bomberman-white';
     iddleSpriteName = 'bomberman-white_18';
-    startPosition = [196, 196];
     animations: CharacterAnimation[] = [
         {
             key: 'walk-down',
