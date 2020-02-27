@@ -7,6 +7,14 @@ export interface CharacterAnimation {
     }
 }
 
+export interface CharacterInputs {
+    UP: Phaser.Input.Keyboard.Key,
+    DOWN: Phaser.Input.Keyboard.Key,
+    LEFT: Phaser.Input.Keyboard.Key,
+    RIGHT: Phaser.Input.Keyboard.Key,
+    TROWING_BOMB: Phaser.Input.Keyboard.Key
+}
+
 export interface Coordinates {
     y: number;
     x: number;
@@ -17,4 +25,9 @@ export enum Position {
     TOP_RIGHT = 'TOP_RIGHT',
     BOTTOM_LEFT = 'BOTTOM_LEFT',
     BOTTOM_RIGHT = 'BOTTOM_RIGHT'
+}
+
+export enum InputChoice {
+    ARROWS = 'ARROWS',
+    LETTERS = 'LETTERS'
 }

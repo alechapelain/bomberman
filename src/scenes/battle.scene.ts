@@ -2,11 +2,12 @@ import 'phaser'
 import BombermanWhite from '../characters/bomberman-white'
 import BombermanBlack from '../characters/bomberman-black';
 import { CharacterAbstract } from '../characters/character.abstract';
-import { getCharacterCoordinates } from '../characters/character.utils';
-import { Position } from '../characters/character.model';
+import { getCharacterCoordinates, getCharacterInputs } from '../characters/character.utils';
+import { InputChoice, Position } from '../characters/character.model';
 
 export class BattleScene extends Phaser.Scene {
-    private characters: CharacterAbstract[];
+    private characters: CharacterAbstract[] = [];
+    private stage: Phaser.Tilemaps.StaticTilemapLayer;
 
     constructor() {
         super({
@@ -32,23 +33,22 @@ export class BattleScene extends Phaser.Scene {
      * Loading images/stage
      */
     public preload (): void {
-        this.load.image('tiles', 'assets/background/classic.png')
-        this.load.tilemapTiledJSON('map', 'assets/background/stage-classic.json')
+        this.load.image('tiles', 'assets/stages/stage1/stage1.png')
+        this.load.tilemapTiledJSON('map', 'assets/stages/stage1/stage1.json')
         this.load.atlas('bomberman-white', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
+        this.load.atlas('bomb', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
     }
     /**
      * When Creating the scene
      */
     public create (): void {
         const map = this.make.tilemap({ key: 'map' })
-        const classicStage = map.addTilesetImage('stage-classic', 'tiles')
-        const stage = map.createStaticLayer('stage', classicStage);
-        stage.setCollisionFromCollisionGroup(true)
+        const classicStage = map.addTilesetImage('stage1', 'tiles')
+        this.stage = map.createStaticLayer('stage', classicStage);
+        this.stage.setCollisionFromCollisionGroup(true)
 
-        this.characters = [
-            new BombermanWhite(this.physics, this.anims, BattleScene.getInput1(this.input), stage, getCharacterCoordinates(Position.TOP_LEFT)),
-            new BombermanBlack(this.physics, this.anims, BattleScene.getInput2(this.input), stage, getCharacterCoordinates(Position.BOTTOM_RIGHT))
-        ];
+        this.setCharacter(BombermanWhite, InputChoice.ARROWS, Position.TOP_LEFT)
+        this.setCharacter(BombermanBlack, InputChoice.LETTERS, Position.BOTTOM_RIGHT)
 
         this.characters.forEach(character => character.load());
     }
@@ -57,33 +57,25 @@ export class BattleScene extends Phaser.Scene {
      * @param time
      */
     public update (time): void {
-        this.characters.forEach(character => character.onMoving());
+        this.characters.forEach((character) => {
+            character.onMoving()
+            character.onThrowingBomb()
+        });
     }
 
     /**
-     * Return input 1 using keyboard arrows
-     * @param input
-     * @private
+     * Set Character to be loaded
+     * @param className
+     * @param inputChoice
+     * @param startingPosition
      */
-    private static getInput1(input) {
-        return input.keyboard.addKeys({
-            UP: Phaser.Input.Keyboard.KeyCodes.UP,
-            DOWN: Phaser.Input.Keyboard.KeyCodes.DOWN,
-            LEFT: Phaser.Input.Keyboard.KeyCodes.LEFT,
-            RIGHT: Phaser.Input.Keyboard.KeyCodes.RIGHT,
-        });
-    }
-    /**
-     * Return input 2 using keyboard letters
-     * @param input
-     * @private
-     */
-    private static getInput2(input) {
-        return input.keyboard.addKeys({
-            UP: Phaser.Input.Keyboard.KeyCodes.Z,
-            DOWN: Phaser.Input.Keyboard.KeyCodes.S,
-            LEFT: Phaser.Input.Keyboard.KeyCodes.Q,
-            RIGHT: Phaser.Input.Keyboard.KeyCodes.D
-        });
+    private setCharacter(className, inputChoice, startingPosition) {
+        this.characters.push(new className(
+            this.physics,
+            this.anims,
+            this.stage,
+            getCharacterInputs(this.input, inputChoice),
+            getCharacterCoordinates(startingPosition)
+        ));
     }
 }

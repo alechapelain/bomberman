@@ -1,5 +1,4 @@
-import { CharacterAnimation, Coordinates } from './character.model';
-import { Inputs } from '../scenes/scene.model';
+import { CharacterAnimation, Coordinates, CharacterInputs } from './character.model';
 
 export abstract class CharacterAbstract {
     private character: Phaser.Physics.Arcade.Sprite;
@@ -10,8 +9,8 @@ export abstract class CharacterAbstract {
     constructor(
         protected physics: Phaser.Physics.Arcade.ArcadePhysics,
         protected anims: Phaser.Animations.AnimationManager,
-        protected inputs: Inputs,
         protected stage: Phaser.Tilemaps.StaticTilemapLayer,
+        protected inputs: CharacterInputs,
         protected startCoordinates: Coordinates
     ) {
     }
@@ -60,6 +59,15 @@ export abstract class CharacterAbstract {
             this.character.setVelocityY(0);
         }
     }
+
+    public onThrowingBomb():void {
+        if (Phaser.Input.Keyboard.JustDown(this.inputs.TROWING_BOMB)) {
+            console.log('throwing a grenade !')
+
+        }
+    }
+
+
     /**
      * Set Sprite and Apply collisions
      */
