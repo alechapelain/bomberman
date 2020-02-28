@@ -33,8 +33,9 @@ export class BattleScene extends Phaser.Scene {
      * Loading images/stage
      */
     public preload (): void {
-        this.load.image('tiles', 'assets/stages/stage1/stage1.png')
-        this.load.tilemapTiledJSON('map', 'assets/stages/stage1/stage1.json')
+        this.load.audio('theme', ['assets/audio/battle-theme.mp3']);
+        this.load.image('tiles', 'assets/stages/stage1/stage1.png');
+        this.load.tilemapTiledJSON('map', 'assets/stages/stage1/stage1.json');
         this.load.atlas('bomberman-white', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
         this.load.atlas('bomb', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
     }
@@ -42,15 +43,17 @@ export class BattleScene extends Phaser.Scene {
      * When Creating the scene
      */
     public create (): void {
-        const map = this.make.tilemap({ key: 'map' })
-        const classicStage = map.addTilesetImage('stage1', 'tiles')
+        const map = this.make.tilemap({ key: 'map' });
+        const classicStage = map.addTilesetImage('stage1', 'tiles');
         this.stage = map.createStaticLayer('stage', classicStage);
-        this.stage.setCollisionFromCollisionGroup(true)
+        this.stage.setCollisionFromCollisionGroup(true);
 
-        this.setCharacter(BombermanWhite, InputChoice.ARROWS, Position.TOP_LEFT)
-        this.setCharacter(BombermanBlack, InputChoice.LETTERS, Position.BOTTOM_RIGHT)
+        this.setCharacter(BombermanWhite, InputChoice.ARROWS, Position.TOP_LEFT);
+        this.setCharacter(BombermanBlack, InputChoice.LETTERS, Position.BOTTOM_RIGHT);
 
         this.characters.forEach(character => character.load());
+
+        this.sound.add('theme', { volume: 0.5 }).play()
     }
     /**
      * When scene updates
