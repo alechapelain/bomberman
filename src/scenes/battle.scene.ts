@@ -55,7 +55,7 @@ export class BattleScene extends Phaser.Scene {
 
         this.setCharacter(BombermanWhite, InputChoice.ARROWS, Position.TOP_LEFT);
         this.setCharacter(BombermanBlack, InputChoice.LETTERS, Position.BOTTOM_RIGHT);
-        this.characters.forEach(character => character.load());
+        this.characters.forEach(character => character.create());
 
         this.sound.add('theme', { volume: 0.5 }).play()
     }

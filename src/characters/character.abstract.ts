@@ -5,6 +5,8 @@ import { GameTileSize } from '../shared/game.model';
 export abstract class CharacterAbstract {
     private character: Phaser.Physics.Arcade.Sprite;
     private direction: Direction;
+    private bomb: Bomb;
+
     abstract animations: CharacterAnimation[];
     abstract spriteNamePrefix: string;
     abstract iddleSpriteName: string;
@@ -16,15 +18,17 @@ export abstract class CharacterAbstract {
         protected startCoordinates: Coordinates,
         protected physicsBombs: Phaser.Physics.Arcade.Group,
         protected physicsCharacters: Phaser.Physics.Arcade.Group
-    ) {}
+    ) {
+        this.bomb = new Bomb(this.physics, this.anims, this.physicsBombs);
+    }
 
     // ----------------------------------------------------------------------------------------
 
     /**
      * Add Character sprite and apply collisions
      */
-    public load (): void {
-        this.setCharacter();
+    public create (): void {
+        this.createCharacter();
         this.setCharacterAnimations();
     }
 
@@ -95,10 +99,10 @@ export abstract class CharacterAbstract {
                     break;
             }
 
-            bombCoordinate.x = Math.trunc(bombCoordinate.x / GameTileSize.WIDTH) * GameTileSize.WIDTH + (GameTileSize.WIDTH / 2);
-            bombCoordinate.y = Math.trunc(bombCoordinate.y / GameTileSize.HEIGHT) * GameTileSize.HEIGHT + (GameTileSize.HEIGHT / 2);
-
-            new Bomb(this.physics, this.anims, bombCoordinate, this.physicsBombs)
+            this.bomb.throw({
+                x: Math.trunc(bombCoordinate.x / GameTileSize.WIDTH) * GameTileSize.WIDTH + (GameTileSize.WIDTH / 2),
+                y: Math.trunc(bombCoordinate.y / GameTileSize.HEIGHT) * GameTileSize.HEIGHT + (GameTileSize.HEIGHT / 2)
+            })
         }
     }
 
@@ -107,14 +111,13 @@ export abstract class CharacterAbstract {
     /**
      * Set Sprite and Apply collisions
      */
-    private setCharacter (): void {
+    private createCharacter (): void {
         this.character = this.physics.add.sprite(this.startCoordinates.x, this.startCoordinates.y, this.spriteNamePrefix, this.iddleSpriteName);
         this.character.setDepth(2);
         this.character.body.setSize(8, 12, false);
         this.character.body.setOffset(12, 18);
 
         this.physicsCharacters.add(this.character);
-
     }
 
     /**
