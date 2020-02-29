@@ -17,6 +17,8 @@ export class BattleScene extends Phaser.Scene {
         });
     }
 
+    // ----------------------------------------------------------------------------------------
+
     /**
      * Init Scene / listen for fullscreen
      * @param params
@@ -36,28 +38,28 @@ export class BattleScene extends Phaser.Scene {
      */
     public preload (): void {
         this.load.audio('theme', ['assets/audio/battle-theme.mp3']);
+
         this.load.image('tiles', 'assets/stages/stage1/stage1.png');
         this.load.tilemapTiledJSON('map', 'assets/stages/stage1/stage1.json');
+
         this.load.atlas('bomberman-white', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
         this.load.atlas('stage1', 'assets/stages/stage1/stage1.png','assets/stages/stage1/stage1_atlas.json');
     }
+
     /**
      * When Creating the scene
      */
     public create (): void {
-        const map = this.make.tilemap({ key: 'map' });
-        const classicStage = map.addTilesetImage('stage1', 'tiles');
-        this.stage = map.createStaticLayer('stage', classicStage);
-        this.stage.setCollisionFromCollisionGroup(true);
-
+        this.setStage();
         this.setColliders();
+
         this.setCharacter(BombermanWhite, InputChoice.ARROWS, Position.TOP_LEFT);
         this.setCharacter(BombermanBlack, InputChoice.LETTERS, Position.BOTTOM_RIGHT);
-
         this.characters.forEach(character => character.load());
 
         this.sound.add('theme', { volume: 0.5 }).play()
     }
+
     /**
      * When scene updates
      * @param time
@@ -67,6 +69,18 @@ export class BattleScene extends Phaser.Scene {
             character.onMoving()
             character.onThrowingBomb()
         });
+    }
+
+    // ----------------------------------------------------------------------------------------
+
+    /**
+     * Create the battle stage
+     */
+    private setStage() {
+        const map = this.make.tilemap({ key: 'map' });
+        const classicStage = map.addTilesetImage('stage1', 'tiles');
+        this.stage = map.createStaticLayer('stage', classicStage);
+        this.stage.setCollisionFromCollisionGroup(true);
     }
 
     /**

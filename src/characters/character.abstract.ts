@@ -4,20 +4,21 @@ import { GameTileSize } from '../shared/game.model';
 
 export abstract class CharacterAbstract {
     private character: Phaser.Physics.Arcade.Sprite;
-    private direction: Direction
+    private direction: Direction;
     abstract animations: CharacterAnimation[];
     abstract spriteNamePrefix: string;
     abstract iddleSpriteName: string;
 
-    constructor(
+    constructor (
         protected physics: Phaser.Physics.Arcade.ArcadePhysics,
         protected anims: Phaser.Animations.AnimationManager,
         protected inputs: CharacterInputs,
         protected startCoordinates: Coordinates,
         protected physicsBombs: Phaser.Physics.Arcade.Group,
         protected physicsCharacters: Phaser.Physics.Arcade.Group
-    ) {
-    }
+    ) {}
+
+    // ----------------------------------------------------------------------------------------
 
     /**
      * Add Character sprite and apply collisions
@@ -68,7 +69,10 @@ export abstract class CharacterAbstract {
         }
     }
 
-    public onThrowingBomb():void {
+    /**
+     * Creating a new Bomb when input is used
+     */
+    public onThrowingBomb ():void {
         if (Phaser.Input.Keyboard.JustDown(this.inputs.TROWING_BOMB)) {
 
             const bombCoordinate: Coordinates = {
@@ -95,10 +99,10 @@ export abstract class CharacterAbstract {
             bombCoordinate.y = Math.trunc(bombCoordinate.y / GameTileSize.HEIGHT) * GameTileSize.HEIGHT + (GameTileSize.HEIGHT / 2);
 
             new Bomb(this.physics, bombCoordinate, this.physicsBombs)
-
         }
     }
 
+    // ----------------------------------------------------------------------------------------
 
     /**
      * Set Sprite and Apply collisions
@@ -112,6 +116,7 @@ export abstract class CharacterAbstract {
         this.physicsCharacters.add(this.character);
 
     }
+
     /**
      * Apply Animations for the character
      */

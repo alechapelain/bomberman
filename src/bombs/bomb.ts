@@ -12,6 +12,7 @@ export default class Bomb {
         this.setBomb()
     }
 
+    // ----------------------------------------------------------------------------------------
 
     private setBomb (): void {
         this.bomb = this.physics.add.sprite(this.startCoordinates.x, this.startCoordinates.y, 'stage1', 'stage1_19');
