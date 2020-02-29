@@ -98,7 +98,7 @@ export abstract class CharacterAbstract {
             bombCoordinate.x = Math.trunc(bombCoordinate.x / GameTileSize.WIDTH) * GameTileSize.WIDTH + (GameTileSize.WIDTH / 2);
             bombCoordinate.y = Math.trunc(bombCoordinate.y / GameTileSize.HEIGHT) * GameTileSize.HEIGHT + (GameTileSize.HEIGHT / 2);
 
-            new Bomb(this.physics, bombCoordinate, this.physicsBombs)
+            new Bomb(this.physics, this.anims, bombCoordinate, this.physicsBombs)
         }
     }
 

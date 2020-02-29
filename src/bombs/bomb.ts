@@ -6,10 +6,14 @@ export default class Bomb {
 
     constructor(
         private physics: Phaser.Physics.Arcade.ArcadePhysics,
+        private anims: Phaser.Animations.AnimationManager,
         private startCoordinates: Coordinates,
         private physicsBombs: Phaser.Physics.Arcade.Group
     ) {
-        this.setBomb()
+        this.setBomb();
+        this.setBombAnimations();
+
+        this.bomb.play('bomb-twitching', true);
     }
 
     // ----------------------------------------------------------------------------------------
@@ -21,5 +25,18 @@ export default class Bomb {
         this.bomb.setDepth(1);
         this.bomb.body.setSize(16, 16, true);
         this.bomb.setImmovable()
+    }
+
+    private setBombAnimations (): void {
+        this.anims.create({
+            key: 'bomb-twitching',
+            frames: this.anims.generateFrameNames('stage1', {
+                prefix: 'stage1_',
+                start: 19,
+                end: 16
+            }),
+            repeat: -1,
+            frameRate: 6
+        });
     }
 }
