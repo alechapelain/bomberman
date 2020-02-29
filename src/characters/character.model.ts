@@ -20,6 +20,13 @@ export interface Coordinates {
     x: number;
 }
 
+export enum Direction {
+    UP = 'UP',
+    DOWN = 'DOWN',
+    LEFT = 'LEFT',
+    RIGHT = 'RIGHT'
+}
+
 export enum Position {
     TOP_LEFT = 'TOP_LEFT',
     TOP_RIGHT = 'TOP_RIGHT',

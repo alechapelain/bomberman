@@ -8,6 +8,8 @@ import { InputChoice, Position } from '../characters/character.model';
 export class BattleScene extends Phaser.Scene {
     private characters: CharacterAbstract[] = [];
     private stage: Phaser.Tilemaps.StaticTilemapLayer;
+    private physicsBombs: Phaser.Physics.Arcade.Group;
+    private physicsCharacters: Phaser.Physics.Arcade.Group;
 
     constructor() {
         super({
@@ -37,7 +39,7 @@ export class BattleScene extends Phaser.Scene {
         this.load.image('tiles', 'assets/stages/stage1/stage1.png');
         this.load.tilemapTiledJSON('map', 'assets/stages/stage1/stage1.json');
         this.load.atlas('bomberman-white', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
-        this.load.atlas('bomb', 'assets/characters/bomberman-white.png','assets/characters/bomberman-white_atlas.json');
+        this.load.atlas('stage1', 'assets/stages/stage1/stage1.png','assets/stages/stage1/stage1_atlas.json');
     }
     /**
      * When Creating the scene
@@ -48,6 +50,7 @@ export class BattleScene extends Phaser.Scene {
         this.stage = map.createStaticLayer('stage', classicStage);
         this.stage.setCollisionFromCollisionGroup(true);
 
+        this.setColliders();
         this.setCharacter(BombermanWhite, InputChoice.ARROWS, Position.TOP_LEFT);
         this.setCharacter(BombermanBlack, InputChoice.LETTERS, Position.BOTTOM_RIGHT);
 
@@ -76,9 +79,23 @@ export class BattleScene extends Phaser.Scene {
         this.characters.push(new className(
             this.physics,
             this.anims,
-            this.stage,
             getCharacterInputs(this.input, inputChoice),
-            getCharacterCoordinates(startingPosition)
+            getCharacterCoordinates(startingPosition),
+            this.physicsBombs,
+            this.physicsCharacters
         ));
+    }
+
+    /**
+     * Apply colliders
+     */
+    private setColliders () {
+        this.physicsBombs = this.physics.add.group();
+        this.physicsCharacters = this.physics.add.group();
+
+        this.physics.add.collider(this.physicsBombs, this.physicsCharacters);
+        this.physics.add.collider(this.physicsBombs, this.stage);
+        this.physics.add.collider(this.physicsCharacters, this.stage);
+        this.physics.add.collider(this.physicsCharacters, this.physicsCharacters);
     }
 }
