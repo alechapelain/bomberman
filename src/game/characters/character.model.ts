@@ -1,7 +1,3 @@
-export enum CharacterConfiguration {
-    DEFAULT_BOMB_COUNT = 1
-}
-
 export interface CharacterAnimation {
     key: string;
     options: {
@@ -17,11 +13,6 @@ export interface CharacterInputs {
     LEFT: Phaser.Input.Keyboard.Key,
     RIGHT: Phaser.Input.Keyboard.Key,
     TROWING_BOMB: Phaser.Input.Keyboard.Key
-}
-
-export interface Coordinates {
-    y: number;
-    x: number;
 }
 
 export enum Direction {

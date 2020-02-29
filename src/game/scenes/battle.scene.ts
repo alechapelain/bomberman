@@ -1,6 +1,6 @@
 import 'phaser'
-import BombermanWhite from '../characters/bomberman-white'
-import BombermanBlack from '../characters/bomberman-black';
+import BombermanWhite from '../characters/players/bomberman-white'
+import BombermanBlack from '../characters/players/bomberman-black';
 import { CharacterAbstract } from '../characters/character.abstract';
 import { getCharacterCoordinates, getCharacterInputs } from '../characters/character.utils';
 import { InputChoice, Position } from '../characters/character.model';

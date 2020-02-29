@@ -1,6 +1,6 @@
 import 'phaser'
-import { Coordinates } from '../characters/character.model';
 import { BombConfiguration } from './bomb.model';
+import { Coordinates } from '../../shared/game.model';
 
 export default class Bomb {
     private bombs: Phaser.Physics.Arcade.Sprite[] = [];

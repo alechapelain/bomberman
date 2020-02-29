@@ -1,8 +1,8 @@
 import 'phaser'
-import { CharacterAbstract } from './character.abstract';
-import { CharacterAnimation } from './character.model';
+import { CharacterAbstract } from '../character.abstract';
+import { CharacterAnimation } from '../character.model';
 
-export default class BombermanWhite extends CharacterAbstract {
+export default class BombermanBlack extends CharacterAbstract {
     spriteNamePrefix = 'bomberman-white';
     iddleSpriteName = 'bomberman-white_18';
     animations: CharacterAnimation[] = [

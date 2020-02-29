@@ -1,6 +1,7 @@
-import { CharacterAnimation, CharacterConfiguration, CharacterInputs, Coordinates, Direction } from './character.model';
-import Bomb from '../bombs/bomb';
-import { GameTileSize } from '../shared/game.model';
+import { CharacterAnimation, CharacterInputs, Direction } from './character.model';
+import { Coordinates, GameTileSize } from '../shared/game.model';
+import Bomb from '../objects/bombs/bomb';
+import { CharacterConfiguration } from './character.configuration';
 
 export abstract class CharacterAbstract {
     private character: Phaser.Physics.Arcade.Sprite;

@@ -1,4 +1,5 @@
-import { Coordinates, InputChoice, Position } from './character.model';
+import { InputChoice, Position } from './character.model';
+import { Coordinates } from '../shared/game.model';
 
 /**
  * Get character Coodinates (used for starting position)
