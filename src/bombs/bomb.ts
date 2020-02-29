@@ -3,6 +3,7 @@ import { Coordinates } from '../characters/character.model';
 import { BombConfiguration } from './bomb.model';
 
 export default class Bomb {
+    private bombs: Phaser.Physics.Arcade.Sprite[] = [];
 
     constructor(
         private physics: Phaser.Physics.Arcade.ArcadePhysics,
@@ -18,7 +19,15 @@ export default class Bomb {
      */
     public throw (startCoordinates: Coordinates): void {
         const bomb = this.createBomb(startCoordinates);
-        setTimeout(() => bomb.destroy(), BombConfiguration.BOMB_TIMEOUT)
+        this.bombs.push(bomb);
+        setTimeout(() => {
+            bomb.destroy();
+            this.bombs.splice(this.bombs.indexOf(bomb));
+        }, BombConfiguration.BOMB_TIMEOUT)
+    }
+
+    public getCount () {
+        return this.bombs.length;
     }
 
     // ----------------------------------------------------------------------------------------

@@ -1,3 +1,7 @@
+export enum CharacterConfiguration {
+    DEFAULT_BOMB_COUNT = 1
+}
+
 export interface CharacterAnimation {
     key: string;
     options: {

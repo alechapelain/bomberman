@@ -1,4 +1,4 @@
-import { CharacterAnimation, CharacterInputs, Coordinates, Direction } from './character.model';
+import { CharacterAnimation, CharacterConfiguration, CharacterInputs, Coordinates, Direction } from './character.model';
 import Bomb from '../bombs/bomb';
 import { GameTileSize } from '../shared/game.model';
 
@@ -99,10 +99,12 @@ export abstract class CharacterAbstract {
                     break;
             }
 
-            this.bomb.throw({
-                x: Math.trunc(bombCoordinate.x / GameTileSize.WIDTH) * GameTileSize.WIDTH + (GameTileSize.WIDTH / 2),
-                y: Math.trunc(bombCoordinate.y / GameTileSize.HEIGHT) * GameTileSize.HEIGHT + (GameTileSize.HEIGHT / 2)
-            })
+            if (this.bomb.getCount() < CharacterConfiguration.DEFAULT_BOMB_COUNT) {
+                this.bomb.throw({
+                    x: Math.trunc(bombCoordinate.x / GameTileSize.WIDTH) * GameTileSize.WIDTH + (GameTileSize.WIDTH / 2),
+                    y: Math.trunc(bombCoordinate.y / GameTileSize.HEIGHT) * GameTileSize.HEIGHT + (GameTileSize.HEIGHT / 2)
+                })
+            }
         }
     }
 
