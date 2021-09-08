@@ -7,7 +7,7 @@ import { InputChoice, Position } from '../characters/character.model';
 
 export class BattleScene extends Phaser.Scene {
     private characters: CharacterAbstract[] = [];
-    private stage: Phaser.Tilemaps.StaticTilemapLayer;
+    private stage: Phaser.Tilemaps.TilemapLayer;
     private physicsBombs: Phaser.Physics.Arcade.Group;
     private physicsCharacters: Phaser.Physics.Arcade.Group;
 
@@ -79,7 +79,7 @@ export class BattleScene extends Phaser.Scene {
     private setStage() {
         const map = this.make.tilemap({ key: 'map' });
         const classicStage = map.addTilesetImage('stage1', 'tiles');
-        this.stage = map.createStaticLayer('stage', classicStage);
+        this.stage = map.createLayer('stage', classicStage);
         this.stage.setCollisionFromCollisionGroup(true);
     }
 

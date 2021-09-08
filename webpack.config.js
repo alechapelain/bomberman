@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    watch: true,
     entry: './src/game/main.ts',
     module: {
         rules: [
@@ -22,7 +21,7 @@ module.exports = {
     },
     mode: 'development',
     devServer: {
-        contentBase: path.join(__dirname, 'src'),
+        static: path.join(__dirname, 'src'),
         port: 9000
     }
 };
